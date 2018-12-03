@@ -52,7 +52,7 @@ int fty_shm_delete_asset(const char* asset);
 // not be freed)
 int fty_shm_set_test_dir(const char* dir);
 
-void fty_shm_functions_test(bool verbose);
+void ftyshm_test(bool verbose);
 
 void init_default_dir();
 

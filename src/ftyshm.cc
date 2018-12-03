@@ -1,5 +1,5 @@
 /*  =========================================================================
-    fty_shm_functions - FTY metric sharing functions
+    ftyshm - FTY metric sharing functions
 
     Copyright (C) 2018 Eaton
 
@@ -21,7 +21,7 @@
 
 /*
 @header
-    fty_shm_functions - FTY metric sharing functions
+    ftyshm - FTY metric sharing functions
 @discuss
 @end
 */
@@ -42,7 +42,7 @@
 #include <iostream>
 #include <map>
 
-#include "../include/fty_shm_functions.h"
+#include "../include/ftyshm.h"
 #include "internal.h"
 
 #define DEFAULT_SHM_DIR "/var/run/fty-shm-1"
@@ -682,8 +682,8 @@ void init_default_dir() {
         }                                                                 \
     } while (0)
 
-void fty_shm_functions_test(bool verbose)
+void ftyshm_test(bool verbose)
 {
     //TODO
-    printf("SKIP : No selftest defined yet for fty_shm_functions\n");
+    printf("SKIP : No selftest defined yet for ftyshm\n");
 }

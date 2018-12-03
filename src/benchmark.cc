@@ -48,7 +48,7 @@
 #include <regex>
 #include <iostream>
 
-#include "../include/fty_shm_functions.h"
+#include "../include/ftyshm.h"
 
 static const char help_text[]
     = "benchmark [options] ...\n"

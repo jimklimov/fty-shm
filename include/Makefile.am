@@ -4,7 +4,7 @@
 ################################################################################
 include_HEADERS = \
     fty_shm.h \
-    fty_shm_functions.h \
+    ftyshm.h \
     fty_shm_library.h
 
 

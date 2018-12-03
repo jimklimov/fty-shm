@@ -11,8 +11,8 @@
 *.xml7
 
 # Ignore the source doc texts generated from program sources
-fty_shm_functions.txt
-fty_shm_functions.doc
+ftyshm.txt
+ftyshm.doc
 fty-shm-cleanup.txt
 fty-shm-cleanup.doc
 

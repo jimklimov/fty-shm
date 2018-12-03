@@ -31,7 +31,7 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "../include/fty_shm_functions.h"
+#include "../include/ftyshm.h"
 #include "internal.h"
 
 static const char help_text[]

@@ -39,7 +39,7 @@
         <use project = "malamute" />
     </use>
 
-    <class name = "fty-shm-functions" state = "stable">FTY metric sharing functions</class>
+    <class name = "ftyshm" state = "stable">FTY metric sharing functions</class>
     <extra name = "internal.h" />
     <main name = "fty-shm-cleanup" service = "1" >Garbage collector for fty-shm</main>
     <main name = "benchmark" private = "1" >fty-shm benchmark</main>

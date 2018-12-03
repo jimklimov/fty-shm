@@ -13,7 +13,7 @@ lib_LTLIBRARIES += src/libfty_shm.la
 pkgconfig_DATA = src/libfty_shm.pc
 
 src_libfty_shm_la_SOURCES = \
-    src/fty_shm_functions.cc \
+    src/ftyshm.cc \
     src/internal.h \
     src/platform.h
 

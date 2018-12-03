@@ -92,12 +92,12 @@
 
 //  Opaque class structures to allow forward references
 //  These classes are stable or legacy and built in all releases
-typedef struct _fty_shm_functions_t fty_shm_functions_t;
-#define FTY_SHM_FUNCTIONS_T_DEFINED
+typedef struct _ftyshm_t ftyshm_t;
+#define FTYSHM_T_DEFINED
 
 
 //  Public classes, each with its own header file
-#include "fty_shm_functions.h"
+#include "ftyshm.h"
 
 #ifdef FTY_SHM_BUILD_DRAFT_API
 

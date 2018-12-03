@@ -27,6 +27,8 @@
     =========================================================================
 */
 
+// Note: Seems we had to add this header here explicitly for some reason
+#include "../include/fty_shm_functions.h"
 #include "fty_shm_classes.h"
 
 typedef struct {
@@ -40,7 +42,7 @@ typedef struct {
 static test_item_t
 all_tests [] = {
 // Tests for stable public classes:
-    { "fty_shm", fty_shm_test, true, true, NULL },
+    { "fty_shm_functions", fty_shm_functions_test, true, true, NULL },
     {NULL, NULL, 0, 0, NULL}          //  Sentinel
 };
 

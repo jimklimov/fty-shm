@@ -26,7 +26,6 @@
 @end
 */
 
-#include <fty_shm.h>
 #include <getopt.h>
 #include <iomanip>
 #include <iostream>
@@ -49,6 +48,7 @@
 #include <regex>
 #include <iostream>
 
+#include "../include/fty_shm_functions.h"
 
 static const char help_text[]
     = "benchmark [options] ...\n"

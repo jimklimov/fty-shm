@@ -36,7 +36,7 @@
 
     <include filename = "license.xml" />
     <version major = "1" minor = "0" patch = "0" />
-    <abi current = "0" revision = "0" age = "0" />
+    <abi current = "1" revision = "0" age = "0" />
 
     <use project = "fty-proto" libname = "libfty_proto" header = "ftyproto.h" prefix = "fty_proto"
         min_major = "1" min_minor = "0" min_patch = "0"

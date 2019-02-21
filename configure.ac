@@ -37,12 +37,12 @@ AC_SUBST(PACKAGE_VERSION)
 #
 # Libtool -version-info (ABI version)
 #
-# Currently 0:0:0 ("stable"). Don't change this unless you
+# Currently 1:0:0 ("stable"). Don't change this unless you
 # know exactly what you're doing and have read and understand
 # http://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html
 #
 # libfty_shm -version-info
-LTVER="0:0:0"
+LTVER="1:0:0"
 AC_SUBST(LTVER)
 
 # building in a subdirectory?

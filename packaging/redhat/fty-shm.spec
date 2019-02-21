@@ -63,24 +63,24 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 %description
 fty-shm lockless metric sharing library for 42ity.
 
-%package -n libfty_shm0
+%package -n libfty_shm1
 Group:          System/Libraries
 Summary:        lockless metric sharing library for 42ity shared library
 
-%description -n libfty_shm0
+%description -n libfty_shm1
 This package contains shared library for fty-shm: lockless metric sharing library for 42ity
 
-%post -n libfty_shm0 -p /sbin/ldconfig
-%postun -n libfty_shm0 -p /sbin/ldconfig
+%post -n libfty_shm1 -p /sbin/ldconfig
+%postun -n libfty_shm1 -p /sbin/ldconfig
 
-%files -n libfty_shm0
+%files -n libfty_shm1
 %defattr(-,root,root)
 %{_libdir}/libfty_shm.so.*
 
 %package devel
 Summary:        lockless metric sharing library for 42ity
 Group:          System/Libraries
-Requires:       libfty_shm0 = %{version}
+Requires:       libfty_shm1 = %{version}
 Requires:       libsodium-devel
 Requires:       zeromq-devel
 Requires:       czmq-devel >= 3.0.2

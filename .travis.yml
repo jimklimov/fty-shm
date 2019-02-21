@@ -21,6 +21,7 @@ sudo: false
 
 #dist:
 #- trusty
+#- xenial
 
 #services:
 #- docker
@@ -90,9 +91,18 @@ pkg_src_zeromq_ubuntu14: &pkg_src_zeromq_ubuntu14
 - sourceline: 'deb http://download.opensuse.org/repositories/network:/messaging:/zeromq:/git-draft/xUbuntu_14.04/ ./'
   key_url: 'http://download.opensuse.org/repositories/network:/messaging:/zeromq:/git-draft/xUbuntu_14.04/Release.key'
 
+pkg_src_zeromq_ubuntu16: &pkg_src_zeromq_ubuntu16
+- sourceline: 'deb http://download.opensuse.org/repositories/network:/messaging:/zeromq:/git-draft/xUbuntu_16.04/ ./'
+  key_url: 'http://download.opensuse.org/repositories/network:/messaging:/zeromq:/git-draft/xUbuntu_16.04/Release.key'
+
+# Note: refer to ubuntu16 if you use dist==xenial
 # Note: refer to ubuntu14 if you use dist==Trusty
 # Also note that as of early 2017, either dist==trusty or services==docker
 # is needed for C++11 support; docker envs are usually faster to start up
+#
+# Note that fty-shm recipe in particular was customized to include the
+# "ubuntu-toolchain-r-test" source and gcc-4.9 and g++-4.9 packages.
+#
 addons:
   apt:
     sources: 
@@ -151,11 +161,11 @@ matrix:
 # pass its configure script:
   - env: BUILD_TYPE=clang-format-check CLANG_FORMAT=clang-format-5.0
     os: linux
-    dist: trusty
+    dist: xenial
     addons:
       apt:
         sources:
-        - llvm-toolchain-trusty-5.0
+        - llvm-toolchain-xenial-5.0
         packages:
         - clang-5.0
         - clang-format-5.0
